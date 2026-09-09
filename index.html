@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cumbre - Iniciar sesión</title>
+  <style>
+    :root {
+      --azul: #1f436b;
+      --azul-oscuro: #173757;
+      --blanco: #ffffff;
+      --fondo: #f3f6f9;
+      --gris: #d7dee6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: var(--fondo);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .login-container {
+      width: 100%;
+      max-width: 420px;
+      background: var(--blanco);
+      border-radius: 14px;
+      padding: 42px;
+      box-shadow: 0 10px 30px rgba(23, 55, 87, 0.15);
+      text-align: center;
+    }
+
+    .logo {
+      width: 150px;
+      max-width: 100%;
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      color: var(--azul);
+      font-size: 26px;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      color: var(--azul);
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid var(--gris);
+      border-radius: 7px;
+      font-size: 15px;
+      outline: none;
+      transition: 0.2s;
+    }
+
+    input:focus {
+      border-color: var(--azul);
+      box-shadow: 0 0 0 3px rgba(31, 67, 107, 0.12);
+    }
+
+    button {
+      width: 100%;
+      margin-top: 8px;
+      padding: 14px;
+      border: none;
+      border-radius: 7px;
+      background: var(--azul);
+      color: var(--blanco);
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: var(--azul-oscuro);
+    }
+
+    .footer {
+      margin-top: 24px;
+      color: #9ca3af;
+      font-size: 12px;
+    }
+
+    @media (max-width: 480px) {
+      .login-container {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="login-container">
+    <img src="logo-color-cumbre.png" alt="Logo Cumbre" class="logo">
+
+    <h1>Bienvenido</h1>
+    <p class="subtitle">Ingresa tus credenciales para acceder al sistema.</p>
+
+    <form>
+      <div class="form-group">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Ingresa tu usuario" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+      </div>
+
+      <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <p class="footer">© 2026 Cumbre</p>
+  </main>
+
+</body>
+</html>
